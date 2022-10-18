@@ -1,0 +1,57 @@
+Algoritmo FUNCIONES_CADENAS_PSEINT
+	Definir cad Como Caracter
+	Definir opc como Entero
+	Escribir "[1] Longuitud (cadena) "
+	Escribir "[2] Mayuscula (cadena) "
+	Escribir "[3] Minuscula (cadena) "
+	Escribir "[4] SubCadena (cadena, pos_ini,pos_fin) "
+	Escribir "[5] Concatenar (cadena1,cadena2) "
+	Escribir "[6] Convertir a Numerico (cadena) "
+	Escribir "[7] Convertir a Cadena (cadena) "
+	
+	Escribir "Seleccione la Opcion a realizar :"
+	leer opc
+	
+	Segun opc Hacer 
+		1:
+			Escribir "Ingrese la Cadena o String"
+			leer cad
+			Escribir "La cantidad de letras de la :",cad," es :",Longitud(cad)
+		2:
+			Escribir "Ingrese la Cadena o String"
+			leer cad
+			Escribir "La palabra en Mayuscula es :",Mayusculas(cad)
+		3:
+			Escribir "Ingrese la Cadena o String"
+			leer cad
+			Escribir "La palabra en Mainuscula es :",Minusculas(cad)
+		4:
+			Definir pos_ini, pos_fin Como Entero
+			Escribir "Ingrese la Cadena o String"
+			leer cad
+			Escribir "Posicion Inicial"
+			leer pos_ini
+			Escribir "Posicion Final"
+			leer pos_fin
+			Escribir "El primer caracter de la cadena es :",Subcadena(cad,pos_ini,pos_fin)
+		5:
+			Definir cad1, cad2 Como Cadena
+			Escribir "Ingrese la Cadena 1"
+			leer cad1
+			Escribir "Ingrese la Cadena 2"
+			leer cad2
+			Escribir "La Concatenacion de las cadenas es :",Concatenar(cad1,cad2)
+		6:
+			Definir cad1 Como Cadena
+			Escribir "Ingrese la Cadena de Numeros "
+			leer cad1
+			Escribir "La Cadena a numero es :",convertirANumero(cad1)
+		7:
+			Definir num Como Entero
+			Escribir "Ingrese el Numero :"
+			leer num
+			Escribir "El numero a cadena es :",ConvertirATexto(num)
+		De Otro Modo:
+			Escribir "Opcion ingresada no Valida...."
+	FinSegun
+FinAlgoritmo

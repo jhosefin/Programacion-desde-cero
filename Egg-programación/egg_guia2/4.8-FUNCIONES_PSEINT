@@ -1,0 +1,95 @@
+Algoritmo FUNCIONES_PSEINT
+	Definir num Como Entero
+	Escribir "[1]: Raiz Cuadrada      -> RC(numero)"
+	Escribir "[2]: Valor Absoluto     -> ABS(numero)"
+	Escribir "[3]: Longuitud Natural  -> LN(numero)"
+	Escribir "[4]: Exponencial Numero -> EXP(numero)"
+	Escribir "[5]: Seno Numero -> SEN(numero)"
+	Escribir "[6]: Coseno Numero -> COS(numero)"
+	Escribir "[7]: Tangente Numero -> TAN(numero)"
+	Escribir "[8]: Devuelve Arcoseno -> ASEN(numero)"
+	Escribir "[9]: Arcoselo x -> ACOS(numero)"
+	Escribir "[10]: Arcotangente x -> ATAN(numero)"
+	Escribir "[11]: Resto de Division Entera -> MOD(numero)"
+	Escribir "[12]: Trunca valor de x -> TRUNC(numero)"
+	Escribir "[13]: Redondear valor x -> REDOND(numero)"
+	Escribir "[14]: Aleatorio 0 y x-1 -> AZAR(numero)"
+	Escribir "[15]: Aleatorio minimo y maximo -> ALEATORIO(numero)"
+	
+	Escribir "Ingrese la opcion-->"
+	leer num
+	Segun num hacer
+		1:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "La Raiz Cuadrada es :", rc(num)
+		2:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "El Valor Absoluto es :", abs(num)
+		3:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "El Logaritmno Natural es :", ln(num)
+		4:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "El Valor Exponencial es :", exp(num)
+		5:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "El Seno del Numero es :", sen(num*PI/180)
+		6:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			num= cos(num)
+			Escribir "El Coseno del Numero es :", num
+		7:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "La Tangente del Numero es :", tan(num)
+		8:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "El Arcoseno del Numero es :", asen(num)
+		9:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "El Arcoseno de X es :", acos(num)
+		10:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "La Arcotangente de X es :", atan(num)
+		11:
+			Definir num1,num2,num3 Como Real
+			Escribir "Ingrese el Nro 1 :"
+			leer num1
+			Escribir "Ingrese el Nro 2 :"
+			leer num2
+			num3= num1 mod num2
+			Escribir "El Resto de la Division es :", num3
+		12:
+			Definir num1 Como Real
+			Escribir "Ingrese el Nro a Truncar :"
+			leer num1
+			Escribir "La parte entera de X es :", trunc(num1)
+		13:
+			Definir num Como Real
+			Escribir "Ingrese el Nro a Calcular formato Decinal :"
+			leer num
+			Escribir "Redondea el Valor mas cercano a de X :", redon(num)
+		14:
+			Escribir "Ingrese el Nro a Calcular :"
+			leer num
+			Escribir "El Entero Aleatorio de X es :", atan(num)
+		15:
+			Definir num1,num2 Como Entero
+			Escribir "Ingrese el Nro 1 :"
+			leer num1
+			Escribir "Ingrese el Nro 2 :"
+			leer num2			
+			num= aleatorio(num1,num2)
+			Escribir "El Entero Aleatorio de X es :", num
+	FinSegun
+	
+FinAlgoritmo

@@ -1,0 +1,60 @@
+//Dada una matriz de orden n * m (donde n y m son valores ingresados por el usuario) realizar
+//un subprograma que llene la matriz de numeros aleatorios. Despues, crearemos otro
+//subprograma que calcule y muestre la suma de los elementos de la matriz. Mostrar la matriz y
+//los resultados por pantalla.
+Algoritmo eje10guia4
+	
+	Definir nc,nf,matriz,i,j, columna,fila Como Entero
+	
+	Escribir "ingrese las coordenadas de la matriz"
+	Escribir "Ingresa el numero de columnas"
+	Leer nc
+	Escribir "Ingresa el numero de filas"
+	Leer nf
+	Dimension matriz(nc,nf)
+	llenar(matriz,nc,nf)
+	suma(matriz,nc,nf)
+	
+FinAlgoritmo
+	
+SubProceso llenar(matriz Por Referencia,nc,nf)
+
+	Definir i,j, columna,fila Como Entero
+	
+	
+	columna=nc-1	
+	fila=nf-1
+	
+	Para i<-0 Hasta nf-1 Hacer
+		Para j<-0 Hasta nc-1 Hacer
+			
+			matriz(i,j) = Aleatorio( 0 , 100)
+			
+		FinPara
+		Escribir " "
+	FinPara
+
+
+FinSubProceso
+
+SubProceso suma(matriz,nc,nf)
+	definir sumai, columna, fila, i ,j Como Entero
+	sumai=0
+	Para i<-0 Hasta nf-1 Hacer
+		Para j<-0 Hasta nc-1 Hacer
+			
+			Escribir Sin Saltar " [", matriz(i,j) ,"] ","+"
+			sumai = matriz(i,j) + sumai
+			
+		FinPara
+		Escribir " "
+	FinPara
+	Escribir Sin Saltar " =", " [", sumai ,"] "
+	Escribir " "
+	
+FinSubProceso
+	
+
+
+
+	

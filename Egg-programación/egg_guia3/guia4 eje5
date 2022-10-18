@@ -1,0 +1,31 @@
+Algoritmo ejercicio5_guia4
+	
+	Definir num , i, n Como Entero
+	Escribir "Ingrese el tamaño del vector"
+	Leer n
+	Dimension num(n)
+	
+	
+	Para i = 0 hasta n -1 Hacer
+		Escribir "Ingrese los valores numericos"
+		Leer num(i)
+	FinPara
+	
+	Escribir sin saltar "El numero mayor es ", numMayor(num,n)
+	Escribir " "
+
+FinAlgoritmo
+
+
+funcion j <- numMayor(num,n)
+	Definir j, i Como Entero
+	j = num(0)
+	Si n > 1 Entonces
+	Para i = 1 hasta n-1 Hacer
+		Si num(i) > j Entonces
+			j=num(i)
+		FinSi
+	FinPara
+FinSi
+FinFuncion
+	
