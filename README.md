@@ -1,1 +1,3 @@
 # Programacion-desde-cero
+
+Pseucodigo
